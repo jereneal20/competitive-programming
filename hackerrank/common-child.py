@@ -1,12 +1,13 @@
 #!/usr/bin/pyhon3
 import sys
+
 '''
 Sample input:
 SALLY
 HARRY
 '''
 
-def main(str1, str2):
+def common_child(str1, str2):
 	prevArr = [0] * (len(str1) + 1)
 	curArr = [0] * (len(str1) + 1)
 	for c1 in str1:
@@ -21,8 +22,9 @@ def main(str1, str2):
 		curArr, prevArr = prevArr, curArr
 	print(prevArr[-2])
 
+
 if __name__ == "__main__":
 	# str1 = input()
 	# str2 = input()
 	# main(str1, str2)
-	main(sys.argv[1], sys.argv[2])
+	common_child(sys.argv[1], sys.argv[2])
