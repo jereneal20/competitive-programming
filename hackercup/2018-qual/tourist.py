@@ -17,7 +17,7 @@ def tourist(k, v, attractions):
 
 if __name__ == "__main__":
     f = open("tourist.txt", "r")
-    out = open("output.txt", "w")
+    out = open("tourist-output.txt", "w")
     tc = int(f.readline())
     # tc = int(input())
     for i in range(tc):
